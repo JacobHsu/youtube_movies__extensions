@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Storefront 本週發燒特惠",
+  "version": "1.0.0",
+  "description": "手動掃描 YouTube Storefront 頁面上「本週發燒特惠」分類的電影清單，並可查詢單片 HD 購買特價。",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "掃描本週發燒特惠",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
